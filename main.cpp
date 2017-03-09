@@ -59,13 +59,29 @@ int main(int argc, char*argv[])
     
     vector<Instance> v = parse(input_file);
     
-    
-    // for(int i = 0; i < v.size(); ++i)
-    // {
-    //     v.at(i).print();
-    // }
-    
     Problem prob(v);
+    int input;
+    cout << "Welcome to Kevin's Feature Selection Algorithm" << endl;
+    cout << "Type the number of the selection algorithm you want" << endl;
+    cout << "\t 1) Forward Selection" << endl;
+    cout << "\t 2) Backward Elimination" << endl;
+    cout << "\t 3) Kevin's Special Algorithm" << endl;
     
+    cin >> input;
+
+    if(input == 1)
+    {
+        cout << "forward" << endl;
+    }
+    else if(input == 2)
+    {
+        cout << "backard" << endl;
+    }
+    else
+    {
+        cout << "Kevins" << endl;
+    }
+
+
     return 0;
 }
