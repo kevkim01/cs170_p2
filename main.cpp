@@ -139,7 +139,7 @@ void Forward(Problem prob, int size)                        //function to solve 
             warn = false;
             cout << endl<< "Warning: accuracy decreasing, continuing search..." << endl << endl;
         }
-        temp.print();
+        temp.print();                                       //print
         y = temp.feat_in;
         
         while(!pri_que.empty())                             //clear entire queue, only concerned with highest %
@@ -197,7 +197,7 @@ void Backward(Problem prob, int size)                        //function to solve
             warn = false;
             cout << endl<< "Warning: accuracy decreasing, continuing search..." << endl << endl;
         }
-        temp.print();
+        temp.print();                                       //print
         y = temp.feat_in;
         
         while(!pri_que.empty())                             //clear entire queue, only concerned with highest %
