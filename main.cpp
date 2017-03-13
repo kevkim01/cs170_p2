@@ -167,6 +167,9 @@ void Backward(Problem prob, int size)                        //function to solve
     {
         y.push_back(i);
     }
+    temp.feat_in = y;                                       //prints out the starting state
+    temp.accuracy = prob.Nearest_N(y);
+    temp.print();
     
     bool warn = true;
     
