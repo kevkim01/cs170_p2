@@ -17,6 +17,8 @@ class Instance
         void append_feature(double);    //appends features to vector
         void set_type(double);          //set function for class type
         void print();
+        double get_type();
+        vector<double> get_features();
         
 };
 
