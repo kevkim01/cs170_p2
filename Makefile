@@ -1,10 +1,10 @@
 COMPILE = g++
-
+FLAGS = -O3
 main: main.cpp instance.o problem.o
-	$(COMPILE) main.cpp instance.o problem.o
+	$(COMPILE) $(FLAGS) main.cpp instance.o problem.o
 
 problem.o: problem.cpp problem.h
-	$(COMPILE) -c problem.cpp
+	$(COMPILE) $(FLAGS) -c problem.cpp
 	
 instance.o: instance.cpp instance.h
-	$(COMPILE) -c instance.cpp
+	$(COMPILE) $(FLAGS) -c instance.cpp
