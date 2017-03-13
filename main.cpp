@@ -111,6 +111,10 @@ void Forward(Problem prob, int size)                        //function to solve 
     Feature_Set temp;
     vector<int> y;
     
+    temp.feat_in = y;                                       //prints starting state of forward
+    temp.accuracy = prob.Nearest_N(y);
+    temp.print();
+    
     bool warn = true;
     
     for(int j = 0; j < size; ++j)
